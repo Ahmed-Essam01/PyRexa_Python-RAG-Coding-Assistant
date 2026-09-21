@@ -5,7 +5,7 @@ A conversational **Retrieval-Augmented Generation (RAG)** assistant for Python q
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-RAG-1C3C3C)
 ![ChromaDB](https://img.shields.io/badge/VectorDB-ChromaDB-orange)
-![Gemini](https://img.shields.io/badge/LLM-Google%20Gemini-4285F4?logo=google&logoColor=white)
+![Qwen](https://img.shields.io/badge/LLM-Qwen%202.5%20(Local)-61DAFB?logo=huggingface&logoColor=black)
 ![Colab](https://img.shields.io/badge/Runs%20on-Google%20Colab-F9AB00?logo=googlecolab&logoColor=white)
 
 ---
