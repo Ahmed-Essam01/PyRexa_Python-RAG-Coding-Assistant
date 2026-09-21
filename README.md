@@ -68,7 +68,7 @@ Format context  ([1] Q: ... A: ...)
 Prompt = system rules + retrieved context + chat history + user question
         │
         ▼
-Google Gemini (ChatGoogleGenerativeAI)
+Qwen LLM (HuggingFacePipeline / Local GPU)
         │
         ▼
 Answer  ──► saved back to chat history
@@ -84,7 +84,7 @@ Answer  ──► saved back to chat history
 | Embeddings | `sentence-transformers/all-MiniLM-L6-v2` (HuggingFace) |
 | Vector store | ChromaDB |
 | Sparse retrieval | BM25 (`rank_bm25`) |
-| LLM | Google Gemini via `langchain-google-genai` |
+| LLM | Qwen Local LLM via `langchain-huggingface`|
 | Dataset | `luisroque/instruct-python-500k` (HuggingFace Datasets) |
 | Data handling | pandas, NumPy |
 
@@ -147,7 +147,7 @@ Assistant:
 | Retrieval depth per retriever | `search_kwargs={"k": ...}` / `bm25_retriever.k` | `10` |
 | Retriever weights | `EnsembleRetriever(weights=...)` | `[0.5, 0.5]` |
 | Memory window | `Last5ChatMessageHistory(max_messages=...)` | `10` messages |
-| LLM | `ChatGoogleGenerativeAI(model=..., temperature=...)` | `gemini-3.5-flash`, `0.2` |
+| LLM | `HuggingFacePipeline(model=..., temperature=...)` | `(Qwen/Qwen2.5-7B-Instruct)`, `0.2` |
 
 ---
 
